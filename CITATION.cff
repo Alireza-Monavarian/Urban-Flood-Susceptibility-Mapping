@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Code for: Infrastructure-Aware Urban Flood Susceptibility from Multi-Event High-Water Marks: A Multi-Model Comparison"
+version: 1.0.0
+type: software
+license: "MIT"
+abstract: "Code used to produce the results and figures in the manuscript Infrastructure-Aware Urban Flood Susceptibility from Multi-Event High-Water Marks: A Multi-Model Comparison."
+authors:
+  - given-names: Alireza
+    family-names: Monavarian
+    affiliation: Kansas State University
+    # orcid: "https://orcid.org/0009-0006-0991-2454"
+  - given-names: Soheil
+    family-names: Abadifard
+    affiliation: Kansas State University
+    # orcid: "https://orcid.org/0000-0002-2980-4251"
+  - given-names: William J.
+    family-names: Heatherman
+    affiliation: City of Manhattan, KS
+  - given-names: Hande K.
+    family-names: McGinty
+    affiliation: Kansas State University
+    # orcid: "https://orcid.org/0000-0002-9025-5538"
+  - given-names: Vaishali
+    family-names: Sharda
+    affiliation: Kansas State University
+    # orcid: "https://orcid.org/0000-0002-4048-0884"
+keywords:
+  - flood susceptibility
+  - urban pluvial flooding
+  - high-water marks
+  - stormwater infrastructure
+  - MaxEnt
+  - presence-only modeling
