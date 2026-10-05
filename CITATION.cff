@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "Code for: Infrastructure-Aware Urban Flood Susceptibility from Multi-Event High-Water Marks: A Multi-Model Comparison"
 version: 1.0.0
+doi: "10.5281/zenodo.23171162"
 type: software
 license: "MIT"
 abstract: "Code used to produce the results and figures in the manuscript Infrastructure-Aware Urban Flood Susceptibility from Multi-Event High-Water Marks: A Multi-Model Comparison."
