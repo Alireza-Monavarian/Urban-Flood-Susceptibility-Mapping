@@ -1,5 +1,7 @@
 # Urban flood susceptibility from high-water marks, Manhattan, Kansas
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23171162.svg)](https://doi.org/10.5281/zenodo.23171162)
+
 This repository holds the code and result tables for the paper
 
 > Monavarian, A., Abadifard, S., Heatherman, W. J., McGinty, H. K., and Sharda, V. *Infrastructure-Aware Urban Flood Susceptibility from Multi-Event High-Water Marks: A Multi-Model Comparison.* Submitted to *Journal of Hydrology*.
@@ -99,7 +101,9 @@ Most tests run the pipeline on the study data and check the values reported in t
 
 ## Citation
 
-Please cite the paper above. A citation for the archived release will be added here.
+Please cite the paper above. To cite the code itself, use the archived release.
+
+> Monavarian, A., Abadifard, S., Heatherman, W. J., McGinty, H. K., and Sharda, V. (2026). *Code for: Infrastructure-Aware Urban Flood Susceptibility from Multi-Event High-Water Marks: A Multi-Model Comparison* (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23171162
 
 ## License
 
