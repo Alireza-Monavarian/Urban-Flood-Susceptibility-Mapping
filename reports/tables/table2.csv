@@ -1,0 +1,25 @@
+Family,Variable,Source,Type,Effect (MW r / V),Sig,Status
+Terrain,dem,USGS 3DEP 10 m,Cont.,-0.363,**,Retained (modeled)
+Terrain,slope,Derived,Cont.,+0.016,,Retained (modeled)
+Terrain,curvature,Derived,Cont.,+0.027,,Retained (modeled)
+Terrain,tri,Derived,Cont.,N/A,n/a,Dropped -- screening Stage 1 Pearson (r=0.984 with slope; slope retained as the standard hydrologic predictor)
+Terrain,tpi,Derived,Cont.,N/A,n/a,Dropped -- screening Stage 1 Pearson (r=0.972 with curvature; curvature retained as the more direct flow-convergence measure)
+Hydrology,flow_accumulation,Derived (D8),Cont.,N/A,n/a,"Dropped -- screening Stage 2 VIF (shares TWI's post-log scale, pairwise r=0.768 under the Stage-1 threshold but VIF-inflated; TWI retained as the standard topographic wetness index)"
+Hydrology,twi,Derived (D8),Cont.,-0.064,,Retained (modeled)
+Hydrology,spi,Derived (D8),Cont.,N/A,n/a,"Dropped -- screening Stage 1 Pearson (r=0.811 with flow_accumulation, post-log-transform)"
+Hydrology,hand,Derived (D8),Cont.,-0.388,**,Retained (modeled)
+Hydrology,distance_to_streams,NHD HR,Cont.,-0.387,**,Retained (modeled)
+Hydrology,drainage_density,NHD HR,Cont.,+0.486,**,Retained (modeled)
+Soils,ksat,POLARIS,Cont.,+0.464,**,Retained (modeled)
+Soils,available_water_storage,gNATSGO,Cont.,+0.718,**,Retained (modeled)
+Soils,depth_to_restriction,gNATSGO,Cont.,+0.468,**,Retained (modeled)
+Soils,hydrologic_soil_group,SSURGO/SDA,Cat.,V=0.163,**,Retained (modeled)
+Soils,curve_number,Derived (TR-55),Cont.,+0.260,**,Retained (modeled)
+Land cover,nlcd_landcover,NLCD 2021,Cat.,V=0.257,**,Retained (modeled)
+Land cover,impervious_pct,NLCD 2021,Cont.,+0.728,**,Retained (modeled)
+Climate,precip_annual_mean,gridMET 2014-2023,Cont.,N/A,n/a,Dropped -- not acquired (gridMET precipitation layer out of scope for this canonical rebuild; see pipeline.predictors module docstring)
+Climate,precip_rx1day,gridMET 2014-2023,Cont.,N/A,n/a,Dropped -- not acquired (gridMET precipitation layer out of scope for this canonical rebuild; see pipeline.predictors module docstring)
+Stormwater,stormwater_density,City of Manhattan,Cont.,+0.749,**,Retained (modeled)
+Stormwater,distance_to_outfall,City of Manhattan,Cont.,-0.823,**,Retained (modeled)
+Census,population_density,ACS 2018-2022,Cont.,+0.712,**,Retained (modeled)
+Census,median_income,ACS 2018-2022,Cont.,+0.021,,"Dropped -- modeling stage (ACS median-income estimate missing for some AOI block groups; a structural coverage gap, not a multicollinearity drop)"

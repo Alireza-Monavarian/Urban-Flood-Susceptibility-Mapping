@@ -1,0 +1,7 @@
+model,predictors,auc,increment,question
+confounders only,"dem,distance_to_streams,hand,impervious_pct",0.9305650602409639,,
+confounders + focal,"dem,distance_to_streams,hand,impervious_pct,distance_to_outfall",0.9639855421686747,0.033420481927710854,incremental value of distance_to_outfall GIVEN the confounders
+focal only,distance_to_outfall,0.9152234939759036,,
+"focal + confounders (same as above, reversed read)","dem,distance_to_streams,hand,impervious_pct,distance_to_outfall",0.9639855421686747,0.04876204819277108,incremental value of the confounders GIVEN the focal
+full stack,all 17,0.982577108433735,,
+full minus focal,all except distance_to_outfall,0.974078313253012,-0.008498795180723051,cost of dropping distance_to_outfall from the full stack

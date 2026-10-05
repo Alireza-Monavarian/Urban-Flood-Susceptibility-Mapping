@@ -1,0 +1,7 @@
+# Normalise line endings in the repository; check out with the platform default.
+* text=auto
+
+# Strip notebook outputs on commit when nbstripout is installed.
+*.ipynb filter=nbstripout
+*.zpln filter=nbstripout
+*.ipynb diff=ipynb

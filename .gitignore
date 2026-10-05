@@ -1,0 +1,93 @@
+# =============================================================
+#  Flood susceptibility, Manhattan KS
+#  Commit code, tests, the driver notebook and the small result
+#  tables. Never commit the City's data or anything that shows
+#  where the flood marks or the stormwater network are.
+# =============================================================
+
+# ---- Python and Jupyter --------------------------------------
+flood_env/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+catboost_info/
+
+# ---- Secrets -------------------------------------------------
+.census_api_key
+*.key
+
+# ---- Tools that are not Python packages (see README) ---------
+tools/
+
+# ---- Raw inputs ----------------------------------------------
+# data/raw/hwm/ and data/raw/infrastructure/ belong to the City of
+# Manhattan and must never be committed. The rest are local copies of
+# public layers.
+data/raw/
+
+# ---- Outputs that hold the City's data -----------------------
+# The pipeline writes these when it runs with the City's inputs.
+data/processed/canonical_presence.csv
+data/processed/robustness/presence_sfha_tags.csv
+data/processed/infrastructure/
+data/processed/maxent/samples.csv
+reports/gis_export/
+
+# ---- Large rasters and vectors (rebuilt by the pipeline) -----
+*.tif
+*.tiff
+*.asc
+*.aux.xml
+*.ovr
+*.img
+*.nc
+*.gpkg
+*.gdb/
+*.shp
+*.shx
+*.dbf
+*.cpg
+*.mpkx
+*.zip
+*.lambdas
+maxent.cache/
+cache/
+
+# ---- Build folders (rebuilt by the pipeline) -----------------
+data/processed/access/
+data/processed/aoi/
+data/processed/hydrology/
+data/processed/nhd/
+data/processed/predictors/
+data/processed/predictors_screened/
+data/processed/temporal_check/
+data/processed/model_comparison/rasters/
+data/processed/robustness/*/
+data/processed/robustness/*.log
+data/processed/sensitivity/
+
+# MaxEnt fit trees: keep only the summary tables the paper reports.
+data/processed/maxent/*
+!data/processed/maxent/jackknife_gains.csv
+!data/processed/maxent/variable_importance_combined.csv
+!data/processed/maxent/sensitivity/
+data/processed/maxent/sensitivity/*
+!data/processed/maxent/sensitivity/sensitivity_summary.csv
+!data/processed/maxent/tuning/
+data/processed/maxent/tuning/*
+!data/processed/maxent/tuning/aicc_results.csv
+!data/processed/maxent/response_curves/
+data/processed/maxent/response_curves/*
+!data/processed/maxent/response_curves/response_curves.csv
+
+# ---- Talks, posters and office files -------------------------
+*.pptx
+*.docx
+
+# ---- OS and editor -------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp

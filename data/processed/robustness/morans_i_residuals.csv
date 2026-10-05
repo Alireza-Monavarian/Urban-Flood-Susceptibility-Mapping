@@ -1,0 +1,2 @@
+model,n,k,observed_I,expected_I,p_value,n_perm,verdict
+MaxEnt (reference),3083,8,0.15082015761534268,-0.0003244646333549643,0.001,999,clustered

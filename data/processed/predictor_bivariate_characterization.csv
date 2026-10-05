@@ -1,0 +1,19 @@
+predictor,type,test,stat,p_raw,effect,effect_metric,n_pres,n_bg,direction,p_bonferroni,significant
+impervious_pct,continuous,Mann-Whitney U,2471543.5,1.8926014367155198e-153,0.7283520979020979,rank-biserial r,286,10000,higher,3.4066825860879354e-152,True
+nlcd_landcover,categorical,chi-square,679.27073806047,6.834329242116335e-136,0.256979330385593,Cramer's V,286,10000,n/a,1.2301792635809403e-134,True
+distance_to_outfall,continuous,Mann-Whitney U,253113.5,7.111421203904665e-125,-0.8229975524475525,rank-biserial r,286,10000,lower,1.2800558167028396e-123,True
+stormwater_density,continuous,Mann-Whitney U,2500593.0,2.6074444693477727e-105,0.7486664335664335,rank-biserial r,286,10000,higher,4.693400044825991e-104,True
+population_density,continuous,Mann-Whitney U,2448730.5,1.245647648261492e-95,0.712398951048951,rank-biserial r,286,10000,higher,2.2421657668706856e-94,True
+available_water_storage,continuous,Mann-Whitney U,2397033.5,7.715416197914946e-94,0.7183035842293908,rank-biserial r,279,10000,higher,1.3887749156246903e-92,True
+hydrologic_soil_group,categorical,chi-square,272.91836259198,7.212231216574605e-59,0.1629449650632297,Cramer's V,279,10000,n/a,1.298201618983429e-57,True
+drainage_density,continuous,Mann-Whitney U,2125295.0,8.602714241191461e-45,0.4862202797202797,rank-biserial r,286,10000,higher,1.548488563414463e-43,True
+depth_to_restriction,continuous,Mann-Whitney U,2047325.5,3.681553223280777e-43,0.46761684587813623,rank-biserial r,279,10000,higher,6.626795801905399e-42,True
+ksat,continuous,Mann-Whitney U,2093179.0,6.561211297442705e-41,0.46376153846153856,rank-biserial r,286,10000,higher,1.181018033539687e-39,True
+hand,continuous,Mann-Whitney U,874759.5,3.497142796687904e-29,-0.3882800699300699,rank-biserial r,286,10000,lower,6.2948570340382265e-28,True
+distance_to_streams,continuous,Mann-Whitney U,876186.0,4.8265675473899773e-29,-0.3872825174825175,rank-biserial r,286,10000,lower,8.687821585301959e-28,True
+dem,continuous,Mann-Whitney U,910964.0,1.0408007273534877e-25,-0.3629622377622378,rank-biserial r,286,10000,lower,1.873441309236278e-24,True
+curve_number,continuous,Mann-Whitney U,1758028.0,2.7330303786031193e-14,0.2602351254480286,rank-biserial r,279,10000,higher,4.919454681485615e-13,True
+median_income,continuous,Mann-Whitney U,1428727.5,0.5541711743686693,0.020519642857142806,rank-biserial r,280,10000,higher,1.0,False
+curvature,continuous,Mann-Whitney U,1468780.5,0.4335114040417095,0.02711923076923073,rank-biserial r,286,10000,higher,1.0,False
+slope,continuous,Mann-Whitney U,1452296.0,0.6525102058542289,0.015591608391608336,rank-biserial r,286,10000,higher,1.0,False
+twi,continuous,Mann-Whitney U,1338895.0,0.06577741700768047,-0.06370979020979017,rank-biserial r,286,10000,lower,1.0,False

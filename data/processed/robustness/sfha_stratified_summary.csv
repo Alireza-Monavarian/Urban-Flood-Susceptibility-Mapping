@@ -1,0 +1,3 @@
+subset,model,n_presence,n_train,n_test,n_predictors,auc
+outside_SFHA,full_stack,142,99,43,17,0.9872372093023256
+outside_SFHA,outfall_only,142,99,43,1,0.9204011627906976

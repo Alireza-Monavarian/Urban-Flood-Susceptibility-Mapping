@@ -1,0 +1,2 @@
+test,k_models,n_folds,chi2,p_value,caveat,meanrank_CatBoost,meanrank_LightGBM,meanrank_Logistic Regression,meanrank_MaxEnt,meanrank_Random Forest,meanrank_XGBoost
+friedman,6,11,12.90106951871658,0.02432370356754562,"LOEO folds share most of their training data, so Friedman's independence assumption fails and this p-value is anti-conservative; prefer the pairwise NB+Holm result",3.6363636363636362,3.6818181818181817,4.863636363636363,3.727272727272727,2.227272727272727,2.8636363636363638

@@ -1,0 +1,9 @@
+variable,label,rho,p_raw,n,coupled_with_predictor,correction_family,p_adjusted_holm,p_adjusted_fdr_bh,p_adjusted,significant_raw,significant_corrected
+bg_pop_density_mean,Population density (zonal mean of the exact raster MaxEnt trained on) -- see population_density_coupling_disclosure(),0.6938482570061518,3.0505122142349895e-09,56,True,coupled_predictor,3.0505122142349895e-09,3.0505122142349895e-09,3.0505122142349895e-09,True,True
+poverty_rate,Poverty rate,0.34793275218649194,0.009242473665236221,55,False,sociodemographic,0.06469731565665354,0.04818820683969765,0.06469731565665354,True,False
+pct_renter,% renter-occupied,0.33035038761772845,0.01376805909705647,55,False,sociodemographic,0.08260835458233881,0.04818820683969765,0.08260835458233881,True,False
+pct_elderly,% elderly (65+),-0.2972934152449322,0.02750699899033003,55,False,sociodemographic,0.13753499495165017,0.04969668562853537,0.13753499495165017,True,False
+median_income,Median household income ($),-0.31326530612244896,0.02839810607344878,49,False,sociodemographic,0.13753499495165017,0.04969668562853537,0.13753499495165017,True,False
+pct_nonwhite,% non-white,0.17258297258297262,0.20767268483184093,55,False,sociodemographic,0.6230180544955228,0.2907417587645773,0.6230180544955228,False,False
+rent_burden_pct,Rent burden (% of income),0.12730484492552555,0.3885440810241295,48,False,sociodemographic,0.777088162048259,0.4533014278614845,0.777088162048259,False,False
+pct_no_vehicle,% no vehicle access,0.09703404795725501,0.48095925203979645,55,False,sociodemographic,0.777088162048259,0.48095925203979645,0.777088162048259,False,False

@@ -1,0 +1,6 @@
+arm,dropped,n_predictors,loeo_mean_auc,loeo_sd,delta_vs_baseline,n_events
+baseline,,17,0.9531697604247604,0.061118596994338054,0.0,11
+infrastructure,"distance_to_outfall,stormwater_density",15,0.9332160236396599,0.08083793278448256,-0.019953736785100484,11
+soils,"available_water_storage,curve_number,depth_to_restriction,hydrologic_soil_group,ksat",12,0.9401302690070872,0.08253894134035668,-0.013039491417673243,11
+terrain,"curvature,dem,distance_to_streams,drainage_density,hand,slope,twi",10,0.9400663945986673,0.06926432122550208,-0.013103365826093172,11
+land_use,"impervious_pct,nlcd_landcover,population_density",14,0.9550987195969015,0.05659569111900413,0.001928959172141087,11

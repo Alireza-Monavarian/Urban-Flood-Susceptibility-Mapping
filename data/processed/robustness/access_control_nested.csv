@@ -1,0 +1,4 @@
+model,n,auc,increment
+distance_to_road only,1,0.8687060240963855,
+hydro confounders + road,5,0.9419759036144578,
+hydro + road + outfall,6,0.967389156626506,0.02541325301204822

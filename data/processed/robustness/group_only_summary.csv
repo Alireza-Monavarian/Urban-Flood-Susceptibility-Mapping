@@ -1,0 +1,6 @@
+arm,kept,n_predictors,auc,delta_vs_baseline,protocol
+all_predictors,"available_water_storage,curvature,curve_number,dem,depth_to_restriction,distance_to_outfall,distance_to_streams,drainage_density,hand,hydrologic_soil_group,impervious_pct,ksat,nlcd_landcover,population_density,slope,stormwater_density,twi",17,0.982577108433735,0.0,holdout_oos
+infrastructure_only,"distance_to_outfall,stormwater_density",2,0.9177319277108433,-0.0648451807228917,holdout_oos
+soils_only,"available_water_storage,curve_number,depth_to_restriction,hydrologic_soil_group,ksat",5,0.9160421686746988,-0.06653493975903624,holdout_oos
+terrain_only,"curvature,dem,distance_to_streams,drainage_density,hand,slope,twi",7,0.8969240963855423,-0.08565301204819276,holdout_oos
+land_use_only,"impervious_pct,nlcd_landcover,population_density",3,0.8802084337349396,-0.1023686746987954,holdout_oos

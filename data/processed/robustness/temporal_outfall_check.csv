@@ -1,0 +1,3 @@
+arm,layer,n_outfalls,auc,delta_vs_all
+outfall_pre2007_only,distance_to_outfall_pre2007,147,0.9047162650602409,-0.010507228915662692
+outfall_ALL,distance_to_outfall,1148,0.9152234939759036,0.0

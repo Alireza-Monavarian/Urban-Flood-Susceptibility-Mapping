@@ -1,0 +1,84 @@
+# =============================================================
+#  environment.yml - Flood susceptibility (Manhattan, KS)
+#
+#  *** THIS IS NOT THE TESTED ENVIRONMENT. ***
+#
+#  The reported numbers come from a Python 3.14.5 venv pinned in
+#  env/requirements.lock.txt. See env/RUNTIME.md for the full record,
+#  the component versions (Java, MaxEnt, WhiteboxTools) and the seed.
+#
+#  Recreate the tested environment with:
+#      py -3.14 -m venv flood_env
+#      flood_env/Scripts/python -m pip install -r env/requirements.lock.txt
+#
+#  This file is a conda recipe only. Most versions below are not
+#  pinned, and XGBoost results depend on the library version, so do not
+#  treat an environment built from this file as reproducing the paper
+#  unless the versions are pinned to match requirements.lock.txt.
+#
+#  Note: maxent.jar 3.4.4 is NOT a conda package - download it into
+#        tools/maxent/ (README documents this).
+# =============================================================
+name: flood-ch1
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  # ---- Python ----
+  - python=3.11
+  - pip
+  # ---- Core scientific ----
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - statsmodels          # VIF, stats
+  # ---- Geospatial I/O + raster/vector ----
+  - geopandas
+  - rasterio
+  - rioxarray
+  - xarray
+  - shapely
+  - pyproj
+  - fiona
+  - pyogrio             # fast vector I/O backend for geopandas
+  - gdal
+  # ---- Terrain / hydrology ----
+  - xarray-spatial      # slope/curvature/tri/tpi (local metrics; import xrspatial)
+  # - pysheds           # NOT imported by pipeline/; WhiteboxTools is the router
+  # ---- HyRiver stack (predictor acquisition) ----
+  - py3dep              # 3DEP DEM
+  - pynhd               # NHD flowlines
+  - pygeohydro          # NLCD, soils, gNATSGO
+  - pygridmet           # gridMET climate (dropped as predictor; kept for provenance)
+  # ---- Microsoft Planetary Computer (gNATSGO, Sentinel-1) ----
+  - pystac-client
+  - planetary-computer
+  # ---- Spatial statistics (Moran's I on residuals) ----
+  # - libpysal   # NOT imported; Moran's I is implemented in pipeline/robustness.py
+  # - esda       # NOT imported; see above
+  # ---- Machine-learning comparators ----
+  - xgboost
+  - lightgbm
+  - catboost
+  # ---- Interpretability (model_compare.shap_importance) ----
+  - shap
+  # ---- Optional: only for evaluate._classify_values(method='natural_breaks') ----
+  - mapclassify
+  # ---- Visualization ----
+  - matplotlib
+  - folium
+  # ---- Archive handling (.mpkx = 7-Zip) ----
+  - py7zr
+  - requests
+  # ---- MaxEnt runtime (OS-agnostic Java; fixes hardcoded Windows path) ----
+  - openjdk=17
+  # ---- Notebook + reproducibility ----
+  - jupyterlab
+  - notebook
+  - ipykernel
+  - nbstripout
+  - pip:
+      # WhiteboxTools frontend — PRIMARY D8 router (robust over flats/rivers).
+      # Downloads the WBT binary on first use.
+      - whitebox

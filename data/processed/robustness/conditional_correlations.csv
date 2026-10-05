@@ -1,0 +1,9 @@
+where,focal,confounder,spearman_rho,n
+presence,distance_to_outfall,distance_to_streams,0.29831619554647404,277
+presence,distance_to_outfall,dem,-0.27983915005267807,277
+presence,distance_to_outfall,hand,0.11652114959401302,277
+presence,distance_to_outfall,impervious_pct,-0.15317513532472946,277
+background,distance_to_outfall,distance_to_streams,-0.1266616357430077,10000
+background,distance_to_outfall,dem,0.3477133621077666,10000
+background,distance_to_outfall,hand,0.10774357891032378,10000
+background,distance_to_outfall,impervious_pct,-0.4762178684390109,10000
